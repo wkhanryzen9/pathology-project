@@ -1,13 +1,52 @@
-Pathology Management System (Laravel)
-A Laravel-based web application designed for pathology labs to efficiently manage patient records and generate detailed blood test reports in PDF format.
+<h1>Pathology Management System (Laravel)</h1>
 
-Add and manage a variety of medical tests with customizable lower and upper reference values.
+<p><strong>Generate professional blood test PDF reports</strong> — a lightweight Laravel app for pathology labs to manage patients, add tests (with lower/upper reference values), record results, and export printable PDF reports.</p>
 
-Generate professional, printable PDF reports for patients, including test results and ranges.
+<h2>Features</h2>
+<ul>
+  <li>Create & manage patient profiles and visit records</li>
+  <li>Define tests with configurable lower & upper reference ranges</li>
+  <li>Enter multiple test results per patient and auto-validate against ranges</li>
+  <li>Generate downloadable/printable PDF reports (patient info, tests, results, ref ranges)</li>
+  <li>User roles (lab technician, admin) and simple access control</li>
+</ul>
 
-Secure, user-friendly interface for lab technicians and administrators.
+<h2>Quick install</h2>
+<pre><code>git clone &lt;repo-url&gt;
+cd &lt;repo-folder&gt;
+composer install
+cp .env.example .env
+php artisan key:generate
+# configure DB in .env, then:
+php artisan migrate --seed
+php artisan storage:link
+# (optional) frontend build:
+npm install
+npm run build
+php artisan serve
+</code></pre>
 
-Built with Laravel, MySQL, and integrated PDF generation libraries for seamless reporting.
+<h2>Usage</h2>
+<ul>
+  <li>Log in as a lab user → Add patient → Create visit → Add tests and results</li>
+  <li>Click “Generate PDF” on a visit to download a formatted report (uses a PDF library)</li>
+  <li>Customize test reference ranges in the Tests section to reflect your lab's standards</li>
+</ul>
+
+<h2>Tech stack</h2>
+<ul>
+  <li>Laravel (PHP)</li>
+  <li>MySQL / MariaDB</li>
+  <li>barryvdh/laravel-dompdf (or similar) for PDF generation</li>
+  <li>Bootstrap / Tailwind CSS + optional Vue/React for frontend</li>
+</ul>
+
+<h2>Contributing</h2>
+<p>Contributions, bug reports and feature requests are welcome — please open an issue or submit a PR.</p>
+
+<h2>License & Contact</h2>
+<p>MIT License. For questions or demo requests, contact: <em>youremail@example.com</em></p>
+
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
