@@ -1,3 +1,14 @@
+Pathology Management System (Laravel)
+A Laravel-based web application designed for pathology labs to efficiently manage patient records and generate detailed blood test reports in PDF format.
+
+Add and manage a variety of medical tests with customizable lower and upper reference values.
+
+Generate professional, printable PDF reports for patients, including test results and ranges.
+
+Secure, user-friendly interface for lab technicians and administrators.
+
+Built with Laravel, MySQL, and integrated PDF generation libraries for seamless reporting.
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
 
 <p align="center">
